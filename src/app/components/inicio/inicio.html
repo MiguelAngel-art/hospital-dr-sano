@@ -1,16 +1,50 @@
+<!-- HERO BANNER BIENVENIDA -->
+<div class="p-5 mb-4 bg-primary text-white rounded-3 shadow">
+  <div class="container-fluid py-3">
+    <h1 class="display-5 fw-bold">Bienvenido al Hospital Dr. Sano 🏥</h1>
+    <p class="col-md-8 fs-4">Comprometidos con tu salud y bienestar las 24 horas del día. Contamos con tecnología de punta y el mejor equipo médico.</p>
+    <a href="#servicios" class="btn btn-warning btn-lg fw-bold text-dark shadow-sm">Ver Servicios</a>
+  </div>
+</div>
+
 <div class="container my-4">
-  <!-- SECCIÓN PRINCIPAL: NOSOTROS, SERVICIOS Y MÉDICOS -->
-  <div class="row">
-    <div class="col-md-8">
-      <app-nosotros></app-nosotros>
-      <app-servicios></app-servicios>
-      <app-medicos></app-medicos>
+  <div class="row g-4">
+    <!-- COLUMNA PRINCIPAL (NOSOTROS, SERVICIOS, MÉDICOS) -->
+    <div class="col-lg-8">
+      <!-- NOSOTROS -->
+      <section class="mb-5">
+        <app-nosotros></app-nosotros>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" class="mb-5">
+        <app-servicios></app-servicios>
+      </section>
+
+      <!-- MÉDICOS -->
+      <section class="mb-4">
+        <app-medicos></app-medicos>
+      </section>
     </div>
 
-    <!-- SECCIÓN LATERAL: PROMOCIONES Y RESEÑAS -->
-    <div class="col-md-4">
-      <app-promociones></app-promociones>
-      <app-resenas></app-resenas>
+    <!-- COLUMNA LATERAL ASIDE (PROMOCIONES Y RESEÑAS) -->
+    <div class="col-lg-4">
+      <div class="sticky-top" style="top: 20px;">
+        <div class="p-3 mb-4 bg-light rounded-3 shadow-sm border border-primary border-opacity-25">
+          <app-promociones></app-promociones>
+        </div>
+
+        <div class="p-3 bg-white rounded-3 shadow-sm border">
+          <app-resenas></app-resenas>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- BANNER LLAMADO A LA ACCIÓN (CONTACTO / CITAS) -->
+<div class="bg-light p-4 mt-5 rounded-3 border text-center shadow-sm">
+  <h4 class="text-primary fw-bold">¿Necesitas una cita médica?</h4>
+  <p class="text-muted mb-3">Atención inmediata y personalizada para ti y tu familia.</p>
+  <button class="btn btn-primary btn-md px-4 shadow-sm">Reserva tu Cita Aquí</button>
 </div>
